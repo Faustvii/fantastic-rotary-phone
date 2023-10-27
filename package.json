@@ -1,0 +1,26 @@
+{
+  "name": "fantastic-rotary-phone",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "db:push": "bunx drizzle-kit push:sqlite",
+    "db:studio": "bunx drizzle-kit studio",
+    "db:seed": "bun run seed.ts",
+    "db:generate": "bunx drizzle-kit generate:sqlite"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "drizzle-kit": "^0.19.13"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@libsql/client": "0.3.7-pre.2",
+    "@t3-oss/env-core": "^0.7.1",
+    "drizzle-orm": "^0.28.6",
+    "drizzle-typebox": "^0.1.1",
+    "zod": "^3.22.4"
+  }
+}
